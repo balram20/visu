@@ -1,0 +1,5 @@
+import plotly.express as px
+
+fig = px.bar(result_df, x='Page', y='PageRank Score', labels={'Page': 'Wikipedia Page', 'PageRank Score': 'PageRank Score'})
+fig.update_layout(title='PageRank Scores of Wikipedia Pages', xaxis_title='Wikipedia Page', yaxis_title='PageRank Score')
+fig.show()
